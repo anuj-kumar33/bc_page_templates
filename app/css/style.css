@@ -1,0 +1,50 @@
+h2 {
+  font-family: Pacifico; }
+
+.slider_test {
+  margin-top: 12em; }
+
+.img_top {
+  margin-top: -63px; }
+
+.remove_underline:hover {
+  text-decoration: none; }
+
+.bg_second {
+  background-color: #5692b9; }
+
+.cover {
+  background-size: cover; }
+
+.slider_hei {
+  height: 430px; }
+
+.theme_btn {
+  background-color: #f28028; }
+
+.text_color_footer {
+  color: #4d4d4d; }
+
+.height_choose {
+  height: 250px; }
+
+.border_type {
+  border-style: dotted; }
+
+.no_repeat {
+  background-repeat: no-repeat; }
+
+.text_color {
+  color: #f59b26; }
+
+.theme_color {
+  background-color: #01385e; }
+
+.img_banner {
+  background-image: url("../img/banner.jpg"); }
+
+.local_bg {
+  background-image: url("../img/bg_local.png"); }
+
+.contact_cover {
+  background-image: url("../img/contact_bg.jpg"); }
