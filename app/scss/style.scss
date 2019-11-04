@@ -2,35 +2,74 @@ $background_theme_color : #01385e ;
 $background_theme_secong : #5692b9 ;
 $background_button_color : #f28028 ;
 $header_img: url('../img/banner.jpg'); 
-$contact_bg:url('../img/contact_bg.jpg');
 $local_bg:url('../img/bg_local.png');
 $bg_cover: cover;
 $height_choose_us:250px;
 $bg_no_repeat:no-repeat;
-$img_service:-63px;
 $font_color:#f59b26;
 $border_dotted: dotted;
-$slider_height:430px;
-$slider_text_height:12em;
 $text_footer:#4d4d4d;
-$underline:none;
-$font_family:Pacifico;
-
-h2{
-font-family:$font-family;
+$underline:none !important;
+$label_color:#fff;
+$form_text_ceter:center;
+$form_input_width:calc(100% - 8px) !important;
+$remove_margin:0px !important;
+.gform_wrapper .top_label input.medium{
+width:$form_input_width;
 }
-.slider_test{margin-top:$slider_text_height}
-.img_top{margin-top:$img-service;}
+.gform_wrapper .top_label select.medium{
+width:$form_input_width;
+}
+.gform_wrapper .top_label div.ginput_container {
+   margin-top:$remove_margin;
+}
+.gform_wrapper ul li.gfield{
+margin-top:$remove_margin
+}
+$form_input:(
+    padding: 12px !important,
+    border-radius: 4px !important,
+    border: none
+);
+$submit_btn:(
+    background: #ed9724,
+    border: none,
+    padding: 8px 23px,
+    color: #fff,
+    border-radius: 7px,
+);
+$form_alignment:16px !important;
+.gform_wrapper ul.gform_fields li.gfield{
+padding-left:$form_alignment;
+}
+.medium{
+padding:map-get($form_input, padding);
+border-radius:map-get($form_input, border-radius);
+border:map-get($form_input, border);
+}
+input[type="submit"]{
+background:map-get($submit_btn, background);
+padding:map-get($submit_btn, padding);
+border:map-get($submit_btn, border);
+color:map-get($submit_btn, color);
+border-radius:map-get($submit_btn, border-radius);
+}
+.gform_title{
+text-align:$form_text_ceter;
+color:$label_color;
+}
 .remove_underline:hover{
 text-decoration:$underline;
 }
 .bg_second{
 background-color:$background_theme_secong;
 }
+label{
+color:$label_color;
+}
 .cover {
   background-size: $bg_cover;
 }
-.slider_hei{height:$slider_height}
 .theme_btn{
    background-color:$background_button_color;
 }
@@ -39,7 +78,6 @@ color:$text_footer;
 }
 .height_choose{
 height: $height_choose_us;
-
 }
 .border_type{
 border-style:$border_dotted
@@ -51,17 +89,11 @@ background-repeat:$bg-no-repeat;
  color:$font_color;
 }
 .theme_color{
-
 	background-color:$background_theme_color;
-
 }
-
 .img_banner{
       background-image:$header_img;
 }
 .local_bg{
 background-image:$local_bg;
-}
-.contact_cover{
-      background-image:$contact_bg;
 }
