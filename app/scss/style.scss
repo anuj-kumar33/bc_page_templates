@@ -1,31 +1,13 @@
-$background_theme_color : #01385e ;
-$background_theme_secong : #5692b9 ;
-$background_button_color : #f28028 ;
-$header_img: url('../img/banner.jpg'); 
-$local_bg:url('../img/bg_local.png');
-$bg_cover: cover;
-$height_choose_us:250px;
-$bg_no_repeat:no-repeat;
-$font_color:#f59b26;
-$border_dotted: dotted;
-$text_footer:#4d4d4d;
-$underline:none !important;
-$label_color:#fff;
-$form_text_ceter:center;
-$form_input_width:calc(100% - 8px) !important;
-$remove_margin:0px !important;
-.gform_wrapper .top_label input.medium{
-width:$form_input_width;
-}
-.gform_wrapper .top_label select.medium{
-width:$form_input_width;
-}
-.gform_wrapper .top_label div.ginput_container {
-   margin-top:$remove_margin;
-}
-.gform_wrapper ul li.gfield{
-margin-top:$remove_margin
-}
+$bc_default_primary : #01385e ;
+$bc_service_areas_bg_color : #5692b9 ;
+$bc_hero_bg: url('../img/banner.jpg'); 
+$bc_locations_bg:url('../img/bg_local.png');
+$bc_choose_us_height:250px;
+$bc_locations_secondary_text:#f59b26;
+$bc_coupon_border_style: dotted;
+$bc_footer_copyright_links_color:#4d4d4d;
+$bc_contact_form_label_color:#fff;
+
 $form_input:(
     padding: 12px !important,
     border-radius: 4px !important,
@@ -38,62 +20,87 @@ $submit_btn:(
     color: #fff,
     border-radius: 7px,
 );
-$form_alignment:16px !important;
-.gform_wrapper ul.gform_fields li.gfield{
-padding-left:$form_alignment;
+
+.gform_wrapper {
+
+	.gform_title{
+		text-align:center;
+		color:$bc_contact_form_label_color;
+	}
+	.top_label{
+		input.medium{
+			width:calc(100% - 8px) !important;
+		}
+		select.medium{
+			width:calc(100% - 8px) !important;
+		}
+
+		div.ginput_container {
+			margin-top:0px !important;;
+		}
+	}
+	ul{
+		li.gfield{
+			margin-top:0px !important;;
+			padding-left:16px !important;;
+			.medium{
+				padding:map-get($form_input, padding);
+				border:{
+					radius: map-get($form_input, border-radius);
+					style: map-get($form_input, border);
+				}
+			}
+		}
+		
+	}
+	
 }
-.medium{
-padding:map-get($form_input, padding);
-border-radius:map-get($form_input, border-radius);
-border:map-get($form_input, border);
-}
+ 
 input[type="submit"]{
-background:map-get($submit_btn, background);
-padding:map-get($submit_btn, padding);
-border:map-get($submit_btn, border);
-color:map-get($submit_btn, color);
-border-radius:map-get($submit_btn, border-radius);
+	background:map-get($submit_btn, background);
+	padding:map-get($submit_btn, padding);
+	color:map-get($submit_btn, color);
+	border:{
+		radius: map-get($form_input, border-radius);
+		style: map-get($form_input, border);
+	}
 }
-.gform_title{
-text-align:$form_text_ceter;
-color:$label_color;
+
+.no_hover_underline:hover{
+	text-decoration:none;
 }
-.remove_underline:hover{
-text-decoration:$underline;
+.bc_service_areas_container{
+	background-color:$bc_service_areas_bg_color;
 }
-.bg_second{
-background-color:$background_theme_secong;
+.bc_contact_form_full {
+	label{
+		color:$bc_contact_form_label_color;
+	}
+}  			
+.bc_footer_copyright_bar{ 
+	.bc_footer_copyright_links{
+		color:$bc_footer_copyright_links_color;
+	}
 }
-label{
-color:$label_color;
+.bc_choose_us_text{
+	height: $bc_choose_us_height;
 }
-.cover {
-  background-size: $bg_cover;
+.bc_coupon_container{
+	border-style:$bc_coupon_border_style
 }
-.theme_btn{
-   background-color:$background_button_color;
+.bc_home_section_bg{
+	background-repeat:no-repeat;
+	background-size: cover;
 }
-.text_color_footer{
-color:$text_footer;
+.bc_default_primary{
+	background-color:$bc_default_primary;
 }
-.height_choose{
-height: $height_choose_us;
+.bc_hero_container{
+      background-image:$bc_hero_bg;
 }
-.border_type{
-border-style:$border_dotted
-}
-.no_repeat{
-background-repeat:$bg-no-repeat;
-}
-.text_color{
- color:$font_color;
-}
-.theme_color{
-	background-color:$background_theme_color;
-}
-.img_banner{
-      background-image:$header_img;
-}
-.local_bg{
-background-image:$local_bg;
+.bc_locations_container{
+	background-image:$bc_locations_bg;
+	.bc_locations_secondary_text {
+		color:$bc_locations_secondary_text;
+	}
 }
