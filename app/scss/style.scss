@@ -1,5 +1,8 @@
 $bc_default_primary : #01385e ;
+$bc_hero_bg_form_color:#116eab; 
 $bc_service_areas_bg_color : #5692b9 ;
+$bc_blog_heading_color:#00395e;
+$border_width_custom_2: 2px !important ;
 $bc_hero_bg: url('../img/banner.jpg'); 
 $bc_locations_bg:url('../img/bg_local.png');
 $bc_choose_us_height:250px;
@@ -7,24 +10,40 @@ $bc_locations_secondary_text:#f59b26;
 $bc_coupon_border_style: dotted;
 $bc_footer_copyright_links_color:#4d4d4d;
 $bc_contact_form_label_color:#fff;
+$bc_about_bg:#ebebeb;
 
+.bc_hero_bg_form_color{
+	background-color:$bc_hero_bg_form_color;
+}
+.border_width_custom_2{
+border-width:$border_width_custom_2;
+}
+.bc_about_bg{
+	background-color:$bc_about_bg;
+}
+.bc_blog_heading_color{
+	color:$bc_blog_heading_color;
+}
 $form_input:(
     padding: 12px !important,
     border-radius: 4px !important,
     border: none
 );
+.bc_hero_btn_bg_color{
+	background-color:#f38527;}
+
 $submit_btn:(
-    background: #ed9724,
+    background: #f38527,
     border: none,
     padding: 8px 23px,
     color: #fff,
     border-radius: 7px,
 );
-
+.dropdown-item:hover{background-color:#f38527 !important;}
 .gform_wrapper {
 
 	.gform_title{
-		text-align:center;
+		text-align:center;       
 		color:$bc_contact_form_label_color;
 	}
 	.top_label{

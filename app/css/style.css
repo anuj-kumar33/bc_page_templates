@@ -1,3 +1,21 @@
+.bc_hero_bg_form_color {
+  background-color: #116eab; }
+
+.border_width_custom_2 {
+  border-width: 2px !important; }
+
+.bc_about_bg {
+  background-color: #ebebeb; }
+
+.bc_blog_heading_color {
+  color: #00395e; }
+
+.bc_hero_btn_bg_color {
+  background-color: #f38527; }
+
+.dropdown-item:hover {
+  background-color: #f38527 !important; }
+
 .gform_wrapper .gform_title {
   text-align: center;
   color: #fff; }
@@ -20,7 +38,7 @@
     border-style: none; }
 
 input[type="submit"] {
-  background: #ed9724;
+  background: #f38527;
   padding: 8px 23px;
   color: #fff;
   border-radius: 4px !important;
