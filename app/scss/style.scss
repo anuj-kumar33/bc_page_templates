@@ -1,3 +1,18 @@
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Anton|Pacifico|Roboto&display=swap);
+
+// Font Variables
+$bc_roboto: 'Roboto';   
+$bc_anton: 'Anton';
+$bc_pacifico: 'Pacifico';
+// Styles
+body {
+  font-family: $bc_roboto;
+  font-weight: normal;
+}
+
+
+$bc_font_weight:100 !important;
 $bc_default_primary : #01385e ;
 $bc_hero_bg_form_color:#116eab; 
 $bc_service_areas_bg_color : #5692b9 ;
@@ -122,4 +137,48 @@ input[type="submit"]{
 	.bc_locations_secondary_text {
 		color:$bc_locations_secondary_text;
 	}
+}
+
+
+.bc_contact_page_form_wrapper{
+	.gform_title{
+			    font-family: $bc_pacifico;
+				font-size: 26pt !important;
+				text-align: left;
+				font-weight:$bc_font_weight;
+				color: #00395e;
+				}
+				.gfield {
+						input{
+								padding: 10px 5px !important;
+								border-radius: 6px;
+								border: solid;
+								border-width: 1px;
+								border-color: #ccc;
+								margin-bottom: 15px;
+							 }
+
+						label{
+								color: #4d4d4d;
+								font-size: 14px !important;
+								margin: 0px;
+							}
+
+							select{
+								padding: 10px 5px !important;
+								border-radius: 6px;
+								border: solid;
+								border-width: 1px;
+								border-color: #ccc;
+								margin-bottom: 15px;
+							 }
+							
+						}
+}
+.gform_wrapper ul li.gfield .medium {
+    border-style: solid !important;
+}
+h2.text-white.text-center.mb-0.pb-3.pt-3 {
+    font-weight:$bc_font_weight;
+    font-family: $bc_pacifico;
 }
